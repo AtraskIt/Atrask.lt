@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontaktinė kortelė</title>
+  <title>ATRASK.LT — Kontaktinė kortelė</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +13,9 @@
 </div>
 
 <div class="card">
+
+  <!-- Svetainės pavadinimas -->
+  <h2 class="site-title">ATRASK.LT</h2>
 
   <!-- Stock photo avatar -->
   <div class="avatar">
@@ -32,12 +35,13 @@
   <hr>
 
   <h3>Parašykite žinutę</h3>
-  <form>
+  <!-- Formspree veikianti forma -->
+  <form action="https://formspree.io/f/your-form-id" method="POST">
     <label>Jūsų vardas</label>
-    <input type="text">
+    <input type="text" name="name">
 
     <label>Žinutė savininkui</label>
-    <textarea rows="4"></textarea>
+    <textarea name="message" rows="4"></textarea>
 
     <button type="submit">Siųsti žinutę</button>
   </form>
