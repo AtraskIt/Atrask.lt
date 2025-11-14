@@ -1,4 +1,4 @@
-/* Reset & base */
+/* Base setup */
 body {
     margin: 0;
     padding: 20px;
@@ -60,6 +60,19 @@ body.dark-mode .card {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Site title */
+.site-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #4a5fff;
+}
+
+body.dark-mode .site-title {
+    color: #8ab4ff;
 }
 
 /* Avatar */
