@@ -17,7 +17,7 @@ body.dark-mode {
     color: #eee;
 }
 
-/* Theme toggle button */
+/* Theme toggle button (smaller) */
 .theme-toggle {
     position: fixed;
     top: 20px;
@@ -25,11 +25,11 @@ body.dark-mode {
 }
 
 .theme-toggle button {
-    padding: 8px 14px;
-    border-radius: 8px;
+    padding: 4px 8px;      /* smaller padding */
+    border-radius: 6px;    /* slightly smaller corners */
     border: none;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;     /* smaller text */
     background: #4a5fff;
     color: white;
     transition: 0.2s;
@@ -144,73 +144,3 @@ body.dark-mode hr {
 
 /* Form styling */
 form {
-    font-size: 0.95rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 6px;
-    margin-top: 12px;
-    font-weight: 500;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px 12px;
-    background: #fafafa;
-    border-radius: 10px;
-    border: 1px solid #d8d8d8;
-    font-size: 1rem;
-    outline: none;
-    transition: 0.2s;
-}
-
-input:focus, textarea:focus {
-    border-color: #5b7cfa;
-    background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(90,120,255,0.15);
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-    background: #3a3a3a;
-    border-color: #555;
-    color: #eee;
-}
-
-/* Button */
-button {
-    margin-top: 18px;
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    border: none;
-    background: #4a5fff;
-    color: white;
-    font-size: 1.05rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #3d51e6;
-}
-
-button:active {
-    transform: translateY(1px);
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-    .card {
-        padding: 20px;
-    }
-    .name {
-        font-size: 1.6rem;
-    }
-    .avatar img {
-        width: 110px;
-        height: 110px;
-    }
-}
