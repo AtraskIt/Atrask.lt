@@ -8,20 +8,22 @@
 </head>
 <body>
 
+<!-- Dark/Light mode toggle button -->
 <div class="theme-toggle">
-  <button id="toggleTheme">🌙 Dark/Light Mode</button>
+  <button id="toggleTheme">Light Mode</button>
 </div>
 
 <div class="card">
 
-  <!-- Svetainės pavadinimas -->
+  <!-- Site title -->
   <h2 class="site-title">ATRASK.LT</h2>
 
-  <!-- Stock photo avatar -->
+  <!-- Avatar -->
   <div class="avatar">
     <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Avatar">
   </div>
 
+  <!-- User info -->
   <h1 class="name">Jonas Jonaitis</h1>
   <p class="subtitle">Pamesto daikto savininkas</p>
 
@@ -34,8 +36,8 @@
 
   <hr>
 
+  <!-- Contact form -->
   <h3>Parašykite žinutę</h3>
-  <!-- Formspree veikianti forma -->
   <form action="https://formspree.io/f/xvgdkbkb" method="POST">
     <label>Jūsų vardas</label>
     <input type="text" name="name">
@@ -50,9 +52,24 @@
 
 <script>
   const toggleButton = document.getElementById('toggleTheme');
+
+  // Function to update button text based on theme
+  function updateButtonText() {
+    if (document.body.classList.contains('dark-mode')) {
+      toggleButton.textContent = 'Light Mode';
+    } else {
+      toggleButton.textContent = 'Dark Mode';
+    }
+  }
+
+  // Toggle theme and update button text
   toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    updateButtonText();
   });
+
+  // Set correct initial text on page load
+  updateButtonText();
 </script>
 
 </body>
